@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/set_as_live_category"
+        android:orderInCategory="100"
+        android:title="@string/GO_LIVE" />
+
+    <item
+        android:id="@+id/suspend_category"
+        android:orderInCategory="100"
+        android:title="Suspend" />
+    <item
+        android:id="@+id/delete_category"
+        android:orderInCategory="100"
+        android:title="Delete" />
+
+</menu>

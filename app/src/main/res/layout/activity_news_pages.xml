@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsPages">
+
+
+
+
+    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+        android:id="@+id/horizontal_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:icvp_scroll_duration="400"
+        app:icvp_center_page_scale_offset="30dp"
+        app:icvp_min_page_scale_offset="5dp"
+        app:icvp_max_page_scale="1"
+        app:icvp_min_page_scale="0.55"
+        app:icvp_medium_scaled="false"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/demonstration">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/black">
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/swipe_icon">
+
+
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_swipe_left"
+                    />
+
+
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:tint="@color/white"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_swipe_right"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/swipe_icon"
+                android:layout_marginTop="30sp"
+                android:text="Swipe left and right for next news"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/empty_layout">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_cloud_computing"
+        android:tint="@color/grey_300"
+        android:id="@+id/cloud_image"
+        android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cloud_image"
+            android:textSize="16dp"
+            android:textColor="@color/grey_500"
+            android:layout_centerHorizontal="true"
+            android:text="No data available "/>
+
+    </RelativeLayout>
+</RelativeLayout>

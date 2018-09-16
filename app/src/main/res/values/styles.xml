@@ -1,0 +1,71 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+
+    <style name="splash_screen_theme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+    </style>
+
+    <style parent="@android:style/Widget.Spinner" name="spinner_style">
+        <item name="android:background">@drawable/tilborder</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textColorHint">#757575</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="TILCustom">
+        <item name="android:background">@drawable/tilborder</item>
+    </style>
+
+    <style name="TEXT_TILCustom">
+        <item name="android:background">@drawable/text_view_til_bottom</item>
+    </style>
+
+
+    <style name="Only_edit_text_style">
+
+        <item name="android:background">@drawable/tilborder</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textColorHint">#757575</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+
+    </style>
+
+    <style name="MSM_edit_text_style">
+        <item name="android:background">@drawable/etborder</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textColorHint">#757575</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    </style>
+
+
+</resources>

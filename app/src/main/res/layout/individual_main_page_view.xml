@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/photo"
+            android:scaleType="centerCrop"
+            android:id="@+id/news_article_image"/>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gradient_black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:id="@+id/news_headline"
+                android:textStyle="bold"
+                android:text="News Headline"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:id="@+id/news_content"
+                android:textSize="12dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Traditionally Navigation Drawer control is done with a NavigationView placed at theleft side of the app. With BottomAppBar, navigation drawer behaviours have also been changing. The new Bottom Navigation Drawer which is used with BottomAppBar wil"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

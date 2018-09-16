@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:id="@+id/login_main_layout"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:id="@+id/news_title"
+        android:gravity="center_horizontal">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msm_full_text"
+            android:textColor="@color/primary_600"
+            android:id="@+id/msm_text"
+            android:textSize="@dimen/slide_title"
+            android:textStyle="bold" />
+-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/msm_tag_line"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/msm_tag_line"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@+id/news_title"
+            android:text="@string/CHOOSE_LANGUAGE"
+            android:textSize="16sp" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@+id/textView3">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5sp">
+
+
+        <Spinner
+            android:id="@+id/language_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/TEXT_TILCustom"
+            android:background="@android:color/transparent"
+            android:gravity="center|center_horizontal"
+            android:spinnerMode="dropdown"
+            android:visibility="gone">
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SELECT_LANGUAGE"
+            android:layout_centerVertical="true"
+            android:paddingBottom="3sp"
+            android:id="@+id/gener_text"
+            android:textSize="@dimen/hint_text_size"
+            android:textColor="@color/white"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="visible"
+            android:id="@+id/bottom_til_view"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/text_view_til_bottom"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10sp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_down_arrow"
+            android:id="@+id/imageView" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+    <com.google.android.gms.common.SignInButton
+    android:id="@+id/sign_in_button"
+    android:layout_width="match_parent"
+    android:paddingBottom="12sp"
+    android:paddingTop="12sp"
+    android:elevation="10sp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="30sp"
+    android:layout_marginLeft="15sp"
+    android:layout_marginRight="15sp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/progress_layout">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:alpha="0.4"></View>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progress_icon"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            app:indicatorName="BallBeatIndicator"
+            app:indicatorColor="@color/primary_600"
+        />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

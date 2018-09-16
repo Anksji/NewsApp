@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff9900</color>
+    <color name="colorPrimaryDark">#919090</color>
+    <color name="colorAccent">#ff9c10</color>
+
+
+    <color name="primary_900">#e65200</color>
+    <color name="primary_800">#ef6d00</color>
+    <color name="primary_700">#f57d00</color>
+    <color name="primary_600">#fb8d00</color>
+
+    <color name="primary_400">#ffa826</color>
+    <color name="primary_300">#ffb84d</color>
+    <color name="primary_200">#ffcd80</color>
+    <color name="primary_100">#ffe0b2</color>
+    <color name="primary_50">#fff3e0</color>
+
+
+    <color name="secondryLight">#80CBC4</color>
+    <color name="main_page_forground">#0097A7</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="inactive_color">#616161</color>
+    <color name="blue_icon_color">#00bcd4</color>
+
+    <color name="edit_text_color">#E0F2F1</color>
+
+    <color name="grey_50">#FAFAFA</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+
+
+
+    <color name="warning_yellow">#dcd603</color>
+
+    <color name="comment_user_name_color">#757575</color>
+
+    <!--/*textview*/-->
+    <color name="text_bottom_line">#BDBDBD</color>
+
+    <color name="warning_color">#F44E41</color>
+    <color name="text_hint_color">#9E9E9E</color>
+    <color name="text_color">#757575</color>
+
+    <color name="logout_text">#f64c73</color>
+    <color name="red_error">#E04F5F</color>
+    <color name="green">#6AC259</color>
+    <color name="sand_color">#F4DECB</color>
+
+    <color name="egg_plant">#49274A</color>
+    <color name="grap_color">#49274A</color>
+
+    <color name="dark_green">#09a701</color>
+    <color name="black">#000000</color>
+    <color name="whitegrey">#E0E0E0</color>
+    <color name="white">#ffffff</color>
+
+    <color name="overlay_dark_50">#80000000</color>
+
+    <color name="tranparent_color">#00b9b9b9</color>
+
+    <color name="tab_icon_color">#E0E0E0</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+
+
+    <!--seller icon colors-->
+    <color name="first_icon_back">#FF7058</color>
+    <color name="second_icon_back">#ffcd75</color>
+
+    <color name="third_icon_back">#5ab6ef</color>
+    <color name="another_icon">#7186ff</color>
+    <color name="fourth_icon_back">#D6C9C9</color>
+    <color name="fifth_icon_back">#57D4D4</color>
+    <color name="sixth_icon_back">#9a9ddc</color>
+
+
+</resources>

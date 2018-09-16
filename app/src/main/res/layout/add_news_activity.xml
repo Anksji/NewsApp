@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/my_custom_toolbar"
+        android:id="@+id/toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cover_layout">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/cover_image"
+                    android:layout_height="170dp"
+                    android:scaleType="centerCrop" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:clickable="true"
+                    android:id="@+id/add_cover_image_icon"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        app:srcCompat="@drawable/ic_picture"
+                        android:tint="@color/primary_300"
+                        android:id="@+id/picker"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/picker"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/primary_300"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:text="@string/TAP_TO_ADD_COVER"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/cover_layout"
+                android:background="@color/grey_400"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cover_layout"
+                android:hint="@string/ENTER_TITLE_OF_STORY"
+                android:id="@+id/title_of_story"
+                style="@style/TILCustom"
+                android:inputType="textCapWords"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:paddingBottom="3dp"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_of_story"
+                android:hint="@string/ENTER_NEWS_LINK"
+                android:id="@+id/news_link"
+                style="@style/TILCustom"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="3dp"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/news_link"
+                android:gravity="top"
+                android:padding="10dp"
+                android:id="@+id/news_content"
+                android:background="@drawable/noborder"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/START_WRITING"
+                android:imeOptions="actionDone|flagNoEnterAction"
+                android:inputType="textMultiLine|textAutoCorrect|textCapSentences" />
+
+            <!--<EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_of_story"
+                android:layout_margin="5dp"
+
+                android:padding="5dp"
+
+                android:gravity="top"
+                android:hint="@string/START_WRITING"/>-->
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

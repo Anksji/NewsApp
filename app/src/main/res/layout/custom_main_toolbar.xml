@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="@dimen/tool_bar_height"
+    android:elevation="3dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:id="@+id/menu_icons">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:tint="@color/grey_700"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_menu_bars"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_toLeftOf="@+id/toolbar_title"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/toolbar_title"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:textColor="@color/primary_600"
+            android:textStyle="bold"
+            android:text="@string/HOT_TOPICS"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/menu_items"
+        android:layout_alignParentRight="true"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:id="@+id/add_new_category"
+            android:clickable="true"
+            android:background="@drawable/ripple_white_radial_corner">
+
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:padding="12dp"
+                android:id="@+id/setting_icon"
+                android:tint="@color/grey_700"
+                app:srcCompat="@drawable/ic_settings_work_tool"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

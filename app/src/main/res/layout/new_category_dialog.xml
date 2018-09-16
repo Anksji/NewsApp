@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:elevation="3dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ADD_NEW_CATEGORY"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/title"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_marginTop="5sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/ripple_circle_white"
+            android:id="@+id/add_category_help"
+            android:clickable="true"
+            android:visibility="visible"
+            android:layout_marginBottom="10sp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5sp"
+                app:srcCompat="@drawable/ic_question"
+                android:layout_centerInParent="true"
+                android:tint="@color/grey_700"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cover_layout">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:id="@+id/cover_image"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop" />
+
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/add_cover_image_icon"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/ic_picture"
+                android:tint="@color/primary_300"
+                android:id="@+id/picker"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/picker"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/primary_300"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:text="@string/ADD_CATEGORY_PIC"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/third_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="@dimen/description_sheet_text_side_margin"
+        android:layout_marginRight="@dimen/description_sheet_text_side_margin"
+        style="@style/TILCustom">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MSM_edit_text_style"
+            android:id="@+id/add_new_category"
+            android:inputType="textCapWords"
+            android:textSize="@dimen/REGISTER_FORM_TEXT_SIZE"
+            android:textColor="@color/black"
+            android:hint="@string/ENTER_CATEGORY_NAME"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:id="@+id/register_next_btn"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rectangular_selector"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:textColor="@color/grey_600"
+                android:gravity="center"
+                android:id="@+id/cancel_dialog"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="@string/CANCEL"
+                />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey_300"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:id="@+id/add_category_dialog_btn"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="@string/ADD"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

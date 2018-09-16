@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMainView">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/custom_main_toolbar"
+        android:id="@+id/toolbar" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_centerInParent="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/main_page_list">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/category_list_layout"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="250sp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:id="@+id/top_bar"
+            android:elevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:id="@+id/goback">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:tint="@color/grey_700"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/ic_left_arrow_back"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/toolbar_title"
+                android:maxLines="1"
+                android:layout_centerInParent="true"
+                android:textSize="18dp"
+                android:textColor="@color/grey_800"
+                android:textStyle="bold"
+                android:text="@string/CATEGORY"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="250sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/top_bar"
+            android:background="@color/white">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/category_list">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_gradient"
+            android:src="@drawable/gradient_black"/>-->
+
+
+</RelativeLayout>

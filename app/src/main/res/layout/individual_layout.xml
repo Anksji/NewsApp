@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/user_cmt"
+        android:textColor="@color/grey_600"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="user comment fklfjsksff sffkjsf sf
+                 sfsf sf sdf sf sf f sfs f fsf s fs fsd
+                 fg
+
+                 dghfghf hf h f yry rr yth  ytrt ry ty rtth fgh h
+
+                 dgf
+
+
+                 dg
+                 f s"/>
+
+
+</android.support.constraint.ConstraintLayout>

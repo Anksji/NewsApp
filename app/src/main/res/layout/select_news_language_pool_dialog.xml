@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:elevation="3dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Select_pool_language"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/title"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_marginTop="5sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/ripple_circle_white"
+            android:id="@+id/add_category_help"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_marginBottom="10sp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5sp"
+                app:srcCompat="@drawable/ic_question"
+                android:layout_centerInParent="true"
+                android:tint="@color/grey_700"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/description_sheet_text_side_margin"
+        android:layout_marginRight="@dimen/description_sheet_text_side_margin"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="2"
+            android:gravity="center"
+            android:id="@+id/english_language">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/select_sign_english"
+                    app:srcCompat="@drawable/ic_check_mark_black_outline"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="@string/ENGLISH"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_500"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="2"
+            android:id="@+id/hindi_language">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/select_sign_hindi"
+                    app:srcCompat="@drawable/ic_check_mark_black_outline"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:text="@string/HINDI"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/register_next_btn"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangular_selector"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            android:textColor="@color/grey_600"
+            android:gravity="center"
+            android:id="@+id/cancel_dialog"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="@string/CANCEL"
+            />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:id="@+id/add_category_dialog_btn"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="@string/PUBLISH_POOL"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

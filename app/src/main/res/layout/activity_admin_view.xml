@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/my_custom_toolbar"
+        android:id="@+id/toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:id="@+id/item_recycler_view"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/empty_category_view">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:tint="@color/grey_300"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/ic_category_icon"
+                android:id="@+id/empty_category_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty_category_image"
+                android:text="@string/NO_CATEGORY"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/grey_400"
+                android:textSize="16dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/add_new_category_layout">
+
+            &lt;!&ndash;<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:id="@+id/Add_category_actual"
+                android:background="@drawable/ripple_white_radial_corner"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="3dp"
+                android:elevation="3dp"
+                android:clickable="true"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/add_icon"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_shape">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="5dp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/second_icon_back"
+                        app:srcCompat="@drawable/ic_add_icon_wider"
+                        />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/add_icon"
+                    android:textSize="16sp"
+                    android:text="@string/ADD_NEW_CATEGORY"/>
+
+
+            </RelativeLayout>&ndash;&gt;
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:id="@+id/add_category_empty_condition"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="10sp"
+                android:elevation="5sp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/add_new_categoryLayout">
+
+                    <RelativeLayout
+                        android:layout_width="32sp"
+                        android:layout_height="32sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5sp"
+                        android:background="@drawable/ripple_circle_white"
+                        android:id="@+id/help"
+                        android:clickable="true"
+                        android:visibility="visible"
+                        android:layout_marginBottom="10sp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="5sp"
+                            app:srcCompat="@drawable/ic_question"
+                            android:layout_centerInParent="true"
+                            android:tint="@color/grey_700"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="200sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40sp"
+                        android:id="@+id/add_new_category_btn"
+                        android:background="@drawable/ripple_selector"
+                        android:layout_margin="10sp"
+                        android:elevation="2dp"
+                        android:clickable="true"
+                        android:layout_height="100sp">
+                        <ImageView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="20sp"
+                            android:tint="@color/grey_500"
+                            app:srcCompat="@drawable/ic_add_icon"/>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="200dp"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/add_new_category_btn"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/grey_300"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_500"
+                        android:layout_below="@+id/add_new_category_btn"
+                        android:layout_marginTop="20sp"
+                        android:id="@+id/add_category_text"
+                        android:textSize="16sp"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/ADD_NEW_CATEGORY"/>
+
+                    <View
+                        android:layout_width="200dp"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="20sp"
+                        android:layout_below="@+id/add_category_text"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/grey_300"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    -->
+
+
+
+
+</RelativeLayout>

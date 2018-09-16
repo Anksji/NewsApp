@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    >
+
+
+    <ProgressBar
+        android:id="@+id/poll_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:minHeight="40dp"
+        android:progressDrawable="@drawable/my_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/no_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:background="@color/warning_color"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:text="No 20%"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/yes_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:text="Yes 20%"
+        android:layout_marginRight="5dp"/>
+</RelativeLayout>
